@@ -1,14 +1,25 @@
-import React from "react";
+import React from 'react'
+import Links from './Links'
 
-function About() {
+function About(a) {
+  console.log(a.links)
+  if (a.bio) {
+    return (
+      <div id='about'>
+        <h2>About Me</h2>
+        <p>{a.bio}</p>
+        <img src='https://i.imgur.com/mV8PQxj.gif' alt='I made this' />
+        <Links github={a.links.github} linkedin={a.links.linkedin} />
+      </div>
+    )
+  }
   return (
-    <div id="about">
-      <h2>About Me</h2>
-      <p>Put the bio in here</p>
-      <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
-      {/* add your <Links /> component here */}
-    </div>
-  );
+    <div id='about'>
+    <h2>About Me</h2>
+    <img src='https://i.imgur.com/mV8PQxj.gif' alt='I made this' />
+    <Links github={a.links.github} linkedin={a.links.linkedin} />
+  </div>
+  )
 }
 
-export default About;
+export default About
