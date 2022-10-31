@@ -16,4 +16,17 @@ function App() {
   );
 }
 
+// function Shape( {kind, color} ) {
+//   if (kind === 'circle') {
+//     return <div style={{
+//       height: '100px', 
+//       width: '100px', 
+//       borderRadius: '50%',
+//       background: `#${color}`
+//     }}></div>
+//   }
+//   if (kind ===)
+//   return ()
+// }
+
 export default App;
